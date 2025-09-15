@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A04 - Listas</title>
+    <!--
+        Tag LINK para relacionar esse documento HTML a um recurso externo. 
+        Nesse caso, o atributo REL setado para "shortcut icon" define que esse link relaciona uma imagem de ícone ao documento e a parte do "shortcut" é usada para garantir compatibilidade com browser mais antigos. 
+        O atributo TYPE define o tipo de mídia do recurso linkado, no caso, "image/x-icon" especifica que é um ícone. 
+    -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <hr>
+
+    <p>Lista ordenada:</p>
+    <!-- Tag OL define uma Ordered List. O atributo START pode definir o valor inicial de onde a lista partirá, REVERSED inverte a ordem da numeração da lista, TYPE (que pode ser atribuido na OL ou na LI) altera o valor de ordenação da lista.  -->
+    <ol type="I" start="5" reversed>
+        <!-- Tag LI define um List Item. -->
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+        <li>Quarto item</li>
+        <li>Quinto item</li>
+    </ol>
+    <hr>
+
+    <p>Lista não ordenada:</p>
+    <!-- Tag UL define uma Unordered List -->
+    <ul>
+        <!-- Em uma lista não ordenada, o atributo TYPE (que pode ser atribuido na UL para afetar todos os itens ou em cada LI individualmente) altera o valor de ordenação da lista dentre as opções "square", "disc" (que é o valor padrão) e "circle" e "none" -->
+        <li type="square">Matrix (1999)</li>
+        <li type="disc">Cassino Royale (2006)</li>
+        <li type="circle">Cowboy Bebop: Knockin' On Heaven's Door (2001)</li>
+        <li type="none">Coherence (2013)</li>
+    </ul>
+    <hr>
+
+    <p>Listas aninhadas:</p>
+    <!-- Testando o conceito de aninhamento, criando uma lista dentro de outra -->
+    <ol>
+        <li>Qual sua matéria favorita no curso de Desenvolvimento WEB?</li>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+    </ol>
+    <hr>
+
+    <p>Lista de definição:</p>
+    <!-- Marcando uma lista de definição com a tag DL (definition list) -->
+    <dl>
+        <!-- Tag DT (description term), define o termo a ser descrito -->
+        <dt>HTML</dt>
+        <!-- Tag DD (description details), detalha a descrição do termo definido anteriormente -->
+        <dd>Linguagem de marcação de hipertexto, utilizada para criar páginas na Web.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets (Folha de estilos em cascata), é uma linguagem de estilo usada para definir o estilo (cores, fontes, espaçamento, etc) de uma página HTML.</dd>
+
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação utilizada principalmente para scripts dinâmicos do lado do cliente em páginas Web.</dd>
+    </dl>
+    <hr>
+
+    <!-- Tag A para criar links em uma página -->
+    <a href="pagina2.html">Ir para a segunda página</a>
+    <br>
+    <!-- Abaixo, é usado o atributo TARGET com o valor "_blank" para que o link seja aberto em uma nova guia no navegador -->
+    <a href="https://ios.org.br/" target="_blank">Site do IOS</a>
+</body>
+</html>

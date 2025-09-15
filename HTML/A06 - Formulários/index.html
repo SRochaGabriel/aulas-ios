@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A06 - Formulários</title>
+</head>
+<body>
+    <h1>Trabalhando com formulários</h1>
+    <hr>
+
+    <p>Formulário simples</p>
+
+    <!-- 
+        Tag FORM para marcar um formulário.
+        Atributo ACTION para definir a ação que o formulário toma ao ser submetido.
+        Atributo POST para definir o método de envio das informações do formulário.
+    -->
+    <form action="cadastro.php" method="post">
+        <p>
+            <!-- Tag LABEL para associar um input com uma legenda. -->
+            <label for="INome">Nome:</label> 
+            <!-- 
+                Tag INPUT para marcar um local onde o usuário irá inserir algum dado.
+                Atributo TYPE para dizer qual tipo de dado será inserido.
+                Atributo NAME para definir especificamente qual dado está sendo inserido.
+                Atributo ID para criar um identificador único para esse elemento HTML.
+            -->
+            <input type="text" name="nome" id="INome">
+        </p>
+        <p>
+            <label for="ISobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="ISobrenome">
+        </p>
+
+        <!-- 
+            Input do tipo SUBMIT para criar um botão de "enviar" para o formulário.
+            Atributo VALUE para definir o texto do botão.
+        -->
+        <input type="submit" value="Inscrever-se">
+    </form>
+
+    <hr>
+    <h1>Formulário de cadastro</h1>
+
+    <form action="" method="post">
+        <p>
+            <label for="nome_id">Nome</label>
+            <input type="text" name="nome" id="nome_id">
+        </p>
+        <p>
+            <label for="email_id">E-mail</label>
+            <input type="email" name="email" id="email_id">
+        </p>
+        <p>
+            <label for="senha_id">Senha</label>
+            <input type="password" name="senha" id="senha_id">
+        </p>
+        <!-- Atributo TYPE setado para RADIO para criar um botão de opção -->
+        <p>
+            Cor favorita <br>
+            <input type="radio" name="vermelho" id="vermelho_id">
+            <label for="vermelho">Vermelho</label>
+
+            <input type="radio" name="verde" id="verde_id">
+            <label for="verde">Verde</label>
+
+            <input type="radio" name="azul" id="azul_id">
+            <label for="azul">Azul</label>
+        </p>
+
+        <!-- Atributo TYPE setado para CHECKBOX -->
+        <p>
+            <input type="checkbox" name="termo" id="termo_id">
+            <label for="termo_id">Concordar com o termo de uso</label>
+        </p>
+
+        <!-- SELECT para criar uma lista de opções -->
+        <p>
+            <select name="estados" id="estados_id">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </p>
+
+        <!-- TEXTAREA para gerar um campo grande de texto -->
+        <p>
+            <textarea name="texto" id="texto_id"></textarea>
+        </p>
+
+        <!-- RESET para limpar as informações em todos os campos -->
+        <p>
+            <input type="reset">
+        </p>
+        <input type="submit">
+    </form>
+
+    <h1>Required e Placeholder</h1>
+    <form action="">
+        <p>
+            <label for="nome_id">Nome*</label>
+            <!-- Input com atributo REQUIRED para indicar que um campo é obrigatório e PLACEHOLDER para exibir um texto descritivo dentro do input -->
+            <input type="text" name="nome" id="nome_id" required placeholder="Digite seu nome">
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>

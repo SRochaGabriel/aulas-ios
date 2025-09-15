@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Tabelas</title>
+</head>
+
+<body>
+    <h1>Construindo tabelas</h1>
+    <hr>
+
+    <!--
+        TABLE <table></table> (Tabela)
+            TABLE ROW <tr></tr> (Linha de tabela)
+                TABLE DATA <td></td> (Dado da célula)
+    -->
+
+    <!--Tag TABLE com atributo BORDER e WIDTH -->
+    <table border="1" width="100%">
+        <tr>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Gosto musical</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>Sousa Rocha</td>
+            <td>Rock/Rap/Eletronica</td>
+        </tr>
+        <tr>
+            <td>Kadu</td>
+            <td>Dias</td>
+            <td>Rock</td>
+        </tr>
+        <tr>
+            <td>Cibelle</td>
+            <td>Silva</td>
+            <td>Depende</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!--
+        TABLE
+            CAPTION (Legenda da tabela)
+            THEAD (Agrupa o conteúdo do cabeçalho da tabela)
+                TR
+                    TH (Table Header - Conteúdo do cabeçalho, define as colunas)
+            TBODY (Agrupa o conteúdo do corpo da tabela)
+                TR
+                    TD
+            TFOOT (Agrupa o conteúdo do rodapé da tabela)
+                TR
+                    TD
+    -->
+    <!--
+        Atributo do Table Data chamado "COLSPAN" mescla colunas. O atributo "ROWSPAN" mescla linhas.
+    -->
+    <table border="5" width="75%">
+        <caption>Dinheiro poupado em 2026</caption>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Poupança</th>
+                <th>Mesclando células</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>R$ 100,00</td>
+                <td>111</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$ 50,00</td>
+                <td>222</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+                <td colspan="2">333</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Valor total</td>
+                <td>R$ 300,00</td>
+                <td>444</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
