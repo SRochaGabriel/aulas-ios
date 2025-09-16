@@ -1,0 +1,25 @@
+/* Utilizando o seletor BODY e definindo a propriedade TEXT-ALIGN com o valor CENTER */
+body {
+    text-align: center;
+}
+
+p {
+    color: rgb(173, 0, 0);
+    text-align: right;
+    background-color: rgb(128, 182, 184);
+}
+
+/* Utilizando um seletor por ID com # antes do nome */
+#texto_centralizado {
+    text-align: center;
+}
+
+/* Utilizando um seletor por CLASSE com . antes do nome. Utilizando BORDER-RADIUS para arredondar a borda dos elementos, MARGIN para definir espaço externo entres os elementos, PADDING para definir o espaço interno do elemento em relação às suas bordas e FONT-FAMILY para alterar a fonte.*/
+.grupo {
+    text-align: left;
+    color: rgb(132, 0, 255);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
