@@ -1,0 +1,29 @@
+/* Pseudoclasse é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado */
+
+.box1 { /* Aqui são definidos alguns estilos para a box1 */
+    background-color: rgb(64, 82, 76);
+    color: white;
+    width: 400px;
+    height: 600px;
+}
+
+.box1:hover { /* Aqui são definidos estilos que só se aplicam para o box1 quando o mouse passa por cima do elemento graças a pseudoclasse ":hover" */
+    width: 600px;
+    height: 800px;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.botao:hover { /* Altera a cor do botão quando o mouse passa em cima */
+    background-color: rgb(201, 144, 255);
+    color: white;
+}
+
+div p { /* Essa forma de seletor define que só serão afetados os elementos P que estão dentro de um elemento DIV. Display = None deixa o elemento invisível */
+    display: none;
+}
+
+div:hover p { /* Quando o mouse passar em cima da DIV, o elemento P voltará a ser exibido e com a cor vermelha */
+    display: inline;
+    color: red;
+}

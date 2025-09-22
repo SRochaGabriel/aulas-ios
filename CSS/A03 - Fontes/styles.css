@@ -1,0 +1,51 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
+
+body { /* Utilizando a propriedade FONT-FAMILY para alterar as fontes da página */
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    padding: 20px;
+}
+
+h1, h2 { /* Definindo uma família de fontes diferente para títulos */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box1, .box2, .box3 {
+    background-color: rgb(236, 157, 100);
+    width: 500px;
+    height: 250px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.box2 {
+    background-color: rgb(206, 236, 100);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.box3 {
+    background-color: rgb(100, 204, 236);
+    font-family: "Bitcount Prop Double Ink", system-ui;
+    font-optical-sizing: auto;
+}
+
+/* 
+    Medidas de fontes
+    px, cm, mm, em, vw, vh, %
+*/
+.p1 { /* Definindo o FONT-SIZE do primeiro parágrafo em pixels */
+    font-size: 22px;
+    font-style: italic;
+    text-decoration: overline;
+    text-align: justify; /* Definindo o alinhamento do texto para justificado */
+    text-indent: 30px; /* Definindo a identação da primeira linha do parágrafo */
+}
+
+.p2 { /* Definindo o FONT-SIZE do segundo parágrafo em EM (relativo ao tamanho do elemento pai) */
+    font-size: 2em;
+}

@@ -1,0 +1,53 @@
+* { /* Definindo margem de 0% para toda a página com o seletor "*" */
+    margin: 0%;
+}
+
+.bloco_1 { /* Definições para o bloco 1 */
+    background-color: rgb(255, 125, 125); /* Alterando a cor de fundo com código RGB */
+    color: white; /* Alterando a cor do texto com valor de texto */
+
+    margin-bottom: 50px; /* Definindo a margem inferior do bloco */
+    margin-top: 50px; /* Definindo a margem superior */
+    padding: 150px; /* Definindo o espaçamento interno do bloco */
+
+    /* Alterando o box-sizing para o valor BORDER-BOX para manter o tamanho definido com width e height*/
+    box-sizing: border-box;
+
+    border: 10px solid red; /* Definindo uma borda */
+    border-radius: 50%; /* Definindo o arredondamento da borda */
+
+    /* Definindo altura e largura do bloco */
+    width: 500px;
+    height: 400px;
+}
+
+.bloco_2 { /* Definições para o bloco 2 */
+    background-color: #ffcf4d; /* Alterando a cor de fundo com código hexadecimal */
+    color: rgb(0, 136, 136); /* Alterando a cor do texto com código RGB */
+
+    /* Definindo altura e largura do bloco */
+    width: 600px;
+    height: 700px;
+}
+
+.bloco_3 { /* Definições para o bloco 3 */
+    /* Definindo uma imagem de fundo */
+    background-image: url("https://i.pinimg.com/736x/c7/28/61/c728616921ee73357fad4f6ad4025f9b.jpg");
+
+    /* Definindo a altura e largura do bloco para 500 pixels */
+    height: 500px;
+    width: 500px;
+
+    /* Declarando que a imagem de fundo não deve se repetir */
+    background-repeat: no-repeat;
+
+    /* Definindo a posição que a imagem de fundo deve tomar */
+    background-position: center;
+
+    /* Definindo o tamanho do plano de fundo. (Valor CONTAIN faz a imagem inteira ser exibida, mesmo que cortando algumas partes ou não cobrindo todo o elemento. Valor COVER faz a imagem cobrir todo o elemento.) */
+    background-size: cover;
+
+    background-color: coral;
+
+    /* background: coral center no-repeat; | Versão abreviada que permite configurar os elementos REPEAT, POSITION e COLOR em uma única declaração */
+}
