@@ -1,0 +1,17 @@
+/* Definições para a DIV de classe CONTAINER */
+.container {
+    background-color: #318be6;
+    display: flex; /* Define esse container como uma FLEXBOX */
+    flex-direction: row; /* Define a direção do eixo principal do FLEXBOX, ou seja, a direção em que os itens do FLEXBOX serão dispostos */
+    gap: 20px; /* Define um espaço entre cada elemento do FLEXBOX */
+    justify-content: space-evenly; /* Define o alinhamento dos itens no eixo principal */
+    align-items: stretch; /* Define o alinhamento dos itens no eixo transversal */
+    height: 500px;
+}
+
+/* Definições para a DIV de classe ITEM */
+.item {
+    border: 1px solid #000;
+    padding: 10px;
+    /* flex: 1; Faz com que cada item do FLEXBOX se adapte e tente ocupar o máximo de tamanho possível no FLEXBOX */
+}

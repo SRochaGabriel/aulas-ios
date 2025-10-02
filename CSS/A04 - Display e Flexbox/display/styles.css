@@ -1,0 +1,14 @@
+/* Definindo cor de fundo para os elementos H1 e A */
+h1, a {
+    background-color: #318be6;
+}
+
+/* Definindo que o H1 mude sua forma de display padrão, que é BLOCK, para INLINE. Fazendo com que o elemento ocupe apenas o tamanho do conteúdo dele */
+h1 {
+    display: inline;
+}
+
+/* Definindo que o A mude sua forma de display padrão, que é INLINE, para BLOCK. Fazendo com que o elemento ocupe todo o espaço de WIDTH da tela */
+a {
+    display: block;
+}
