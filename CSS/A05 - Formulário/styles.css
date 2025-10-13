@@ -59,6 +59,7 @@ body {
     outline: none; /* Retira a linha extra que aparece ao redor do input ao ser clicado */
     color: #fff;
     padding: 20px 45px 20px 20px;
+    border-radius: 40px;
 }
 
 /* Utilizando o pseudoelemento ::placeholder para estilizar os textos de placeholder dos inputs que estão dentro das divs INPUT_BOX */
@@ -71,7 +72,7 @@ body {
     color: #dadada;
     /* O elemento sai do fluxo padrão de disposição dos elementos e sua posição é relativa à div INPUT_BOX */
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 35%;
 }
 
