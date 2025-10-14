@@ -15,9 +15,9 @@
     display: grid;
     /* Definindo as colunas da grade com valores fracionários */
     grid-template-columns: 1fr 2fr 1fr;
+    /* Definindo as linhas da grade */
+    grid-template-rows: auto auto auto auto;
     /* 
-        Definindo as linhas da grade
-        grid-template-rows: auto auto auto auto;
         Alinhamento vertical dos itens na célula
         align-items: stretch;
         Alinhamento horizontal dos itens na célula
@@ -40,25 +40,25 @@
 
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(255, 141, 141);
+    background-color: rgb(255, 238, 141);
 }
 
 .content1 {
     grid-area: content1;
-    background-color: rgb(255, 141, 141);
+    background-color: rgb(206, 255, 141);
 }
 
 .content2 {
     grid-area: content2;
-    background-color: rgb(255, 141, 141);
+    background-color: rgb(18, 127, 134);
 }
 
 .content3 {
     grid-area: content3;
-    background-color: rgb(255, 141, 141);
+    background-color: rgb(141, 242, 255);
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgb(255, 141, 141);
+    background-color: rgb(255, 141, 249);
 }
