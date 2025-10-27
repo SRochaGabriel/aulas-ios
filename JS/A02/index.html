@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A02 - Javascript</title>
+</head>
+<body>
+    <h1>Trabalhando com variáveis</h1>
+    <hr>
+
+    <h2>Regras para a nomenclatura de variávies</h2>
+    <ul>
+        <li>PODEM começar com letras, $ ou _</li>
+        <li>NÃO PODEM começar com números</li>
+        <li>É POSSÍVEL usar letras, acentos e números</li>
+        <li>NÃO PODEM conter espaços</li>
+        <li>NÃO PODEM ser "palavras reservadas"</li>
+    </ul>
+
+    <p><strong>Importante</strong>: cuidado com as letras maiúsculas e minúsculas! (A varíavel 'nome', por exemplo, é diferente da variável 'Nome' e da variável 'noMe')</p>
+
+    <script>
+        var nome = "Gabriel";
+        // Concatenando strings
+        // window.alert("Olá," + " " + nome);
+
+        var Idade = 20;
+        var idade = 19;
+        // Concatenando com o operador +
+        console.log("Olá! Me chamo " + nome + " e tenho " + Idade + " anos. A pessoa do meu lado tem " + idade + " anos.");
+        // Concatenando com Template String, por meio da crase e do ${}
+        console.log(`Olá! Me chamo ${nome} e tenho ${Idade} anos!`);
+
+        // Alterando o valor de uma variável VAR
+        var filme = "Matrix";
+        filme = "Coherence";
+        console.log(`Meu filme favorito é ${filme}`);
+
+        // Criando uma variável imutável com CONST e uma mutável com LET
+        const protagonista = "Yuri Alberto";
+        let placar = 0;
+        placar = 1
+
+        // Definindo que as variáveis 'num_1' e 'num_2' receberão valores digitados pelo usuário via prompt, que serão convertidos para o tipo 'number'
+        let num_1 = Number(prompt("Digite o primeiro número"));
+        let num_2 = Number(prompt("Digite o segundo número"));
+        // Operações básicas com os valores das variáveis acima
+        let res_soma = num_1 + num_2;
+        let res_subtracao = num_1 - num_2;
+        let res_multiplicacao = num_1 * num_2;
+        let res_divisao = num_1 / num_2;
+
+        // Exibindo os resultados
+        console.log(`Os valores inseridos a serem somados foram ${num_1} e ${num_2}. O resultado dessa soma é ${res_soma}!`);
+        console.log(`Os valores inseridos a serem subtraídos foram ${num_1} e ${num_2}. O resultado dessa subtração é ${res_subtracao}!`);
+        console.log(`Os valores inseridos a serem multiplicados foram ${num_1} e ${num_2}. O resultado dessa multiplicação é ${res_multiplicacao}!`);
+        console.log(`Os valores inseridos a serem divididos foram ${num_1} e ${num_2}. O resultado dessa divisão é ${res_divisao}!`);
+    </script>
+</body>
+</html>
