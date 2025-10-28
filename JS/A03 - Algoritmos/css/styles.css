@@ -1,0 +1,71 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Definições para o body */
+body {
+    background-color: #cfe4ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Definições para o nav */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: #2e72c0;
+    color: #fff;
+}
+
+/* Definições para a div que contém os links do nav */
+.nav-links {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+/* Definições para os links do nav */
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Definições para o main */
+main {
+    flex: 1;
+    padding: 1em 10%;
+}
+
+/* Definições para a div intro dentro do MAIN */
+.intro {
+    background-color: #fff;
+    box-shadow: 0 0 2px #202020;
+    padding: 5em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+/* Definições para o botão que roda o algoritmo */
+button {
+    border-radius: 50px;
+    border: 0;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    background: #2e72c0;
+}
