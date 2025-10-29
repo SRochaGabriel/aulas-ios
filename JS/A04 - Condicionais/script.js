@@ -14,11 +14,20 @@
         else ("senão", determina o caso em que a condição if não é verdadeira)
 
     ESTRUTURA CONDICIONAL:
-    if (condição) {
-        [bloco a ser executado caso a condição retorne True]
-    } else {
-        [bloco a ser executado caso a condição retorne False] 
-    }
+        if (condição) {
+            [bloco a ser executado caso a condição retorne True]
+        } else {
+            [bloco a ser executado caso a condição retorne False] 
+        }
+        
+    ESTRUTURA CONDICIONAL MÚLTIPLA:
+        if (condição) {
+            [bloco a ser executado caso a condição retorne True]
+        } else if (condicao) {
+            [bloco a ser executado caso a condição retorne True] 
+        } else {
+            [bloco a ser executado caso nenhuma das outras condições retorne True]
+        }
 */
 
 // ---------------------------------------------------------------------------------------------------------------------
