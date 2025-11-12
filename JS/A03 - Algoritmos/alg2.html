@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>A03 - Algoritmos | 2</title>
+</head>
+<body>
+    <!-- Cabeçalho e barra de navegação -->
+    <nav>
+        <h1>Algoritmos</h1>
+        <div class="nav-links">
+            <a href="index.html">Algoritmo 1</a>
+            <a href="alg2.html">Algoritmo 2</a>
+            <a href="alg3.html">Algoritmo 3</a>
+            <a href="alg4.html">Algoritmo 4</a>
+            <a href="alg5.html">Algoritmo 5</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="intro">
+            <h2>Algoritmo 2</h2>
+            <p>Esse algoritmo recebe 5 notas das matérias do curso de Desenvolvimento Web do Instituto da Oportunidade Social e calcula a média do aluno com base nessas notas.</p>
+        </div>
+        <button onclick="iniciar()">Iniciar</button>
+    </main>
+
+    <script>
+        function iniciar() {
+            // Mensagem de introdução
+            alert('Olá! Vamos calcular sua média do curso de Desenvolvimento Web. A seguir, pediremos o valor das suas notas para cada matéria.');
+    
+            // Pegando as notas
+            let nota1 = Number(prompt('Digite sua nota na matéria de HTML'));
+            let nota2 = Number(prompt('Digite sua nota na matéria de Git e Github'));
+            let nota3 = Number(prompt('Digite sua nota na matéria de CSS'));
+            let nota4 = Number(prompt('Digite sua nota na matéria de Javascript'));
+            let nota5 = Number(prompt('Digite sua nota na matéria de TCC'));
+    
+            // Calculando a média
+            let media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5;
+    
+            // Informando a média para o usuário
+            alert(`Obrigado! Com base nas suas notas, sua média é ${media}`);
+        }
+    </script>
+</body>
+</html>

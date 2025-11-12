@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - Parte 2</title>
+</head>
+<body>
+    <script>
+        let nome = "Gabriel";
+
+        // acessando a propriedade '.length' para imprimir no console o tamanho da string dentro da variável 'nome'
+        console.log(`Seu nome tem ${nome.length} letras`); 
+
+        // Deixando todas as letras da string maiúsculas com o método 'toUpperCase()'
+        console.log(nome.toUpperCase());
+
+        // Deixando todas as letras da string minúsculas com o método 'toLowerCase()'
+        console.log(nome.toLowerCase());
+
+        // Definindo uma variável do tipo 'number' e uma do tipo 'boolean'.
+        let idade = 20;
+        let maiorDeIdade = true;
+        
+        // Criando uma variável de valor nulo e uma que não recebeu valor nenhum.
+        let x = null;
+        let z;
+        console.log(typeof z); // Antes de definir valor, retornará "undefined"
+        
+        z = 1;
+        // Verificando o tipo da variável com 'typeof'
+        console.log(typeof nome);
+        console.log(typeof idade);
+        console.log(typeof maiorDeIdade);
+        console.log(typeof x); // Retornará "object" apesar de ser nulo
+        console.log(typeof z);
+
+        let teste1 = 4;
+        let teste2 = 5;
+
+        // Comparando os valores de 'teste1' e 'teste2'
+        console.log(teste1 < teste2); // Verifica se 'teste1' é MENOR QUE (<) 'teste2'
+        console.log(teste1 > teste2); // Verifica se 'teste1' é MAIOR QUE (>) 'teste2'
+        console.log(teste1 == teste2); // Verifica se 'teste1' é IGUAL A (==) 'teste2'
+        console.log(teste1 === teste2); // Verifica se 'teste1' e 'teste2' possuem o mesmo VALOR do mesmo TIPO (entre string, boolean ou number)
+
+        let teste3 = teste1 + 5; // Fazendo com que a variável 'teste3' receba o valor de 'teste1' + 5
+        console.log(teste3);
+    </script>
+</body>
+</html>

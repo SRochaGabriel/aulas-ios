@@ -1,0 +1,141 @@
+/* Import da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+/* Definições gerais para a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+}
+
+/* Definições para o body */
+body {
+    /* Definindo o body como uma flexbox de elementos alinhados centralmente no eixo principal e tranversal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Definindo que a altura mínima do body deve ocupar 100% da altura do viewport */
+    min-height: 100vh;
+    /* Definindo uma imagem de fundo para o body */
+    background-image: url(./imagens/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Definições para o container do formulário */
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px); /* Definindo um filtro borrado para o fundo do container */
+}
+
+/* Defininções para o H1 que está dentro do elemento de classe CONTAINER */
+.container h1 {
+    font-size: 2.3em;
+    text-align: center;
+}
+
+/* Definições para as divs de classe INPUT_BOX */
+.input_box {
+    /* Define a posição do elemento de acordo com a necessidade do programador */
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+/* Definições para os inputs de texto que estão dentro das divs INPUT_BOX */
+.input_box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid;
+    outline: none; /* Retira a linha extra que aparece ao redor do input ao ser clicado */
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+/* Utilizando o pseudoelemento ::placeholder para estilizar os textos de placeholder dos inputs que estão dentro das divs INPUT_BOX */
+.input_box input::placeholder {
+    color: #dadada;
+}
+
+/* Definições para os ícones que estão dentro das divs INPUT_BOX */
+.input_box i {
+    color: #dadada;
+    /* O elemento sai do fluxo padrão de disposição dos elementos e sua posição é relativa à div INPUT_BOX */
+    position: absolute;
+    right: 15px;
+    top: 35%;
+}
+
+/* Definições para a div que contém o checkbox para lembrar senha e o link para recuperação de senha */
+.lembrar_senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Definições para o checkbox que está dentro da div de classe LEMBRAR_SENHA */
+.lembrar_senha label input{
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+/* Definições para o link 'Esqueci minha senha'*/
+.lembrar_senha a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Ao passar o mouse em cima do link 'Esqueci minha senha', o link recebe seu text-decoration padrão de volta */
+.lembrar_senha a:hover {
+    text-decoration: underline;
+}
+
+/* Definições para o botão de login */
+.login {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 20px;
+    cursor: pointer; /* O cursor, ao passar em cima do elemento, ganha aspecto que indica que o item é clicável */
+}
+
+/* Comportamento ao passar com o mouse em cima do botão LOGIN*/
+.login:hover {
+    background-color: transparent;
+    border: 2px solid;
+    color: #fff;
+    transition: 0.5s; /* Define um tempo de transição para aplicar os efeitos definidos pelo hover */
+}
+
+/* Definições para a div que contém o link que leva o usuário à página de cadastro */
+.cadastro {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+/* Definições para o link 'Cadastre-se' */
+.cadastro a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Comportamento do link 'Cadastre-se' ao passar do mouse */
+.cadastro a:hover {
+    text-decoration: underline;
+}

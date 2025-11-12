@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>A03 - Algoritmos</title>
+</head>
+<body>
+    <!-- Cabeçalho e barra de navegação -->
+    <nav>
+        <h1>Algoritmos</h1>
+        <div class="nav-links">
+            <a href="index.html">Algoritmo 1</a>
+            <a href="alg2.html">Algoritmo 2</a>
+            <a href="alg3.html">Algoritmo 3</a>
+            <a href="alg4.html">Algoritmo 4</a>
+            <a href="alg5.html">Algoritmo 5</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="intro">
+            <h2>Algoritmo 1</h2>
+            <p>Este algoritmo pega o preço de um produto digitado pelo usuário e abate um desconto de 15% sobre ele.</p>
+        </div>
+        <button onclick="iniciar()">Iniciar</button>
+    </main>
+
+    <script>
+        function iniciar() {
+            // Pedindo um valor para o usuário
+            let valor = Number(prompt('Olá! Por favor, insira o valor do produto:'));
+    
+            // Armazenando o valor em porcentagem do desconto
+            let desconto = 15;
+    
+            // Abatendo o desconto e armazendo em 'valor'
+            let valorFinal = valor - (valor * (desconto / 100));
+    
+            // Informando o valor final ao usuário
+            alert(`Certo! Como o produto custa R$ ${valor} e você tem direito a ${desconto}% de desconto, o valor final a ser pago é R$ ${valorFinal}`);
+        }
+    </script>
+</body>
+</html>

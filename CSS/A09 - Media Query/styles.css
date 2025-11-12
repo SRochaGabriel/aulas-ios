@@ -1,0 +1,129 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+/* Definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições para o body */
+body {
+    font-family: "Questrial", sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease; /* Transição que vai ter efeito na mudança de estilos de acordo com o tamanho da tela */
+}
+
+/* Definições para o header */
+.cabeçalho {
+    text-align: center;
+    padding: 20px;
+    /* Definindo que esse cabeçalho ficará fixo no topo da página e que irá sobrepor os outros elementos pelo z-index */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Definição para o título do cabeçalho */
+.cabeçalho h1 {
+    margin-bottom: 5px;
+}
+
+/* Definições para o container principal */
+.container {
+    display: grid;
+    gap: 20px;
+    padding: 40px 20px;
+    min-height: 100vh;
+    transition: all 0.5s ease;
+}
+
+/* Definições para as divs "card" */
+.card {
+    display: flex;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    transition: all 0.5s ease;
+}
+
+/* Definindo MEDIA QUERY para exibição em MOBILE (até 600px de width) */
+@media(max-width:600px) {
+    body {
+        background-color: #244412;
+    }
+
+    .cabeçalho {
+        background-color: #052000;
+    }
+
+    /* Definindo que, em telas menores de 601px, o grid que é o container principal terá somente uma coluna */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        background-color: #4a8d41;
+    }
+    
+    /* Definindo um pseudo-elemento que será exibido ao lado do item H1 do HEADER */
+    header h1::after {
+        content: " (Mobile)";
+    }
+}
+
+/* Definindo MEDIA QUERY para exibição em TABLET (de 601px até 1024px de width) */
+@media(min-width:601px) and (max-width:1024px) {
+    body {
+        background-color: #443b12;
+    }
+
+    .cabeçalho {
+        background-color: #201800;
+    }
+
+    /* Definindo que, em telas maiores de 600px e menores de 1025px, o grid que é o container principal terá duas colunas */
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        background-color: #8d7f41;
+    }
+    
+    /* Definindo um pseudo-elemento que será exibido ao lado do item H1 do HEADER */
+    header h1::after {
+        content: " (Tablet)";
+    }
+}
+
+/* Definindo MEDIA QUERY para exibição em DESKTOP (a partir de 1025px) */
+@media(min-width:1025px) {
+    body {
+        background-color: #122844;
+    }
+
+    .cabeçalho {
+        background-color: #000e20;
+    }
+
+    /* Definindo que, em telas maiores de 1024px, o grid que é o container principal terá quatro colunas */
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .card {
+        background-color: #41628d;
+    }
+    
+    /* Definindo um pseudo-elemento que será exibido ao lado do item H1 do HEADER */
+    header h1::after {
+        content: " (Desktop)";
+    }
+}

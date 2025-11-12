@@ -1,0 +1,64 @@
+/* Definições gerais para a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições para o container principal */
+.container {
+    border: 3px solid #000;
+    background-color: rgb(47, 155, 255);
+    height: 100vh;
+    gap: 1em;
+    /* Definindo que o container terá comportamento de grade */
+    display: grid;
+    /* Definindo as colunas da grade com valores fracionários */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* Definindo as linhas da grade */
+    grid-template-rows: auto auto auto auto;
+    /* 
+        Alinhamento vertical dos itens na célula
+        align-items: stretch;
+        Alinhamento horizontal dos itens na célula
+        justify-items: center; 
+    */
+    /* Definindo as áreas do grid */
+    grid-template-areas: 
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer"
+    ;
+}
+
+/* DEFININDO AS ÁREAS PARA CADA SEÇÃO DO CONTAINER */
+.header {
+    grid-area: header;
+    background-color: rgb(255, 141, 141);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(255, 238, 141);
+}
+
+.content1 {
+    grid-area: content1;
+    background-color: rgb(206, 255, 141);
+}
+
+.content2 {
+    grid-area: content2;
+    background-color: rgb(18, 127, 134);
+}
+
+.content3 {
+    grid-area: content3;
+    background-color: rgb(141, 242, 255);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(255, 141, 249);
+}

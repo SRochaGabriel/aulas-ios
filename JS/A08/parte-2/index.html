@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A08 - Verificador de senha</title>
+</head>
+<body>
+    <!-- Título -->
+    <h2>Verificador de senhas</h2>
+
+    <!-- Div que contém os inputs de senha e confirmação de senha, e um botão que chama a função 'comparaSenha' ao ser clicado -->
+    <div class="input-area">
+        <input type="password" id="senha" placeholder="Digite sua senha">
+        <input type="password" id="confirm-senha" placeholder="Confirme sua senha">
+
+        <button onclick="comparaSenha()">Verificar</button>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

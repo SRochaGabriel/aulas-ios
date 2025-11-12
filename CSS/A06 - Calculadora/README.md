@@ -1,0 +1,1 @@
+Calculadora em Javascript que responde a eventos no DOM e à digitação no teclado.

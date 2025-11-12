@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Elementos Estruturais</title>
+    <style>
+        header, footer {
+            background-color: rgba(0, 56, 66, 0.336);
+        }
+        main {
+            background-color: aquamarine;
+        }
+        #minha_div {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--  ESTRUTURA DO DOCUMENTO HTML:
+            DOCTYPE
+            html
+                head /head
+                body
+                    header
+                        nav /nav
+                    /header
+                    main
+                        section /section
+                        article /article
+                        aside /aside
+                    /main
+                    footer /footer
+                /body
+            /html
+    -->
+
+    <!--
+        > tag HEADER (NÃO CONFUNDIR com HEAD) define um cabeçalho dentro do body, que exibe informações como o título da página.
+        > tag NAV vai dentro do HEADER e define uma barra de navegação na página.
+        > tag MAIN vai dentro do BODY e fora do HEADER. Define o conteúdo principal da página.
+        > tags SECTION, ARTICLE e ASIDE definem seções dentro do MAIN. Com aside sendo utilizado mais especificamente para uma barra ou conteúdo lateral na página.
+        > tag FOOTER que vai dentro do BODY e fora de HEADER e MAIN, define o conteúdo do rodapé da página.
+    -->
+
+    <header> <!-- Cabeçalho -->
+        <h1>Blog de Tecnologia</h1>
+        <p>Notícias e artigos sobre o mundo tech</p>
+        <nav> <!-- Área de navegação -->
+            <a href="">Página inicial</a>
+            <a href="">Artigos</a>
+            <a href="">Tutoriais</a>
+            <a href="">Contato</a>
+        </nav> 
+    </header>
+
+    <main> <!-- Conteúdo PRINCIPAL -->
+        <section> <!-- Define uma SEÇÃO da página onde um determinado conteúdo relacionado será agrupado -->
+            <article> <!-- Define um conteúdo independente dentro da página -->
+                <h3>O futuro da Inteligência Artificial</h3>
+
+                <p>
+                    A Inteligência Artificial está transformando várias áreas, desde saúde até educação.
+                </p>
+
+                <a href="">Ler mais</a>
+            </article>
+            
+            <article> <!-- Novo article -->
+                <h3>Dicas para aprender programação</h3>
+
+                <p>
+                    Se você está interessado em aprender programação, aqui estão algumas dicas que podem te ajudar.
+                </p>
+
+                <a href="">Ler mais</a>
+            </article>
+        </section>
+
+        <div id="minha_div"> <!-- Utilizando a tag DIV para definir uma seção genérica -->
+            <h3>Testando DIVS</h3>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti voluptatem ducimus libero quod autem sint quae vel iste cum unde, nam ea similique error, sed distinctio recusandae est reiciendis perferendis?
+            </p>
+        </div>
+
+        <aside> <!-- Define um conteúdo lateral na página -->
+            <h2>Sobre o autor</h2>
+
+            <p>
+                Meu nome é Gabriel e sou estudante de desenvolvimento web.
+            </p>
+        </aside>
+    </main>
+
+    <footer> <!-- Define o rodapé da página -->
+        <p>
+            &copy;2025 Blog de Tecnologia | Todos os direitos reservados.
+            Desenvolvido por: Gabriel Sousa
+        </p>
+    </footer>
+</body>
+</html>

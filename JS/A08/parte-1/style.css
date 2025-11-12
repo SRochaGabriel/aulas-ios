@@ -1,0 +1,15 @@
+/* Definições para o body */
+body {
+    text-align: center;
+}
+
+/* Definições para o botão */
+button {
+    border: 0;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1em;
+}

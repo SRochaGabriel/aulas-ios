@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A08 - Calculadora</title>
+</head>
+<body>
+    <header>
+        <!-- Título -->
+        <h1>Calculadora</h1>
+    </header>
+
+    <main>
+        <!-- Div que delimita a calculadora -->
+        <div class="calculadora">
+            <!-- Div que contém os inputs -->
+            <div class="input-area">
+                <input type="number" id="valor1" placeholder="Insira o primeiro valor">
+                <input type="number" id="valor2" placeholder="Insira o segundo valor">
+            </div>
+    
+            <!-- Div que contém os botões -->
+            <div class="btn-area">
+                <button onclick="operacao('soma')">+</button>
+                <button onclick="operacao('subtracao')">-</button>
+                <button onclick="operacao('multiplicacao')">x</button>
+                <button onclick="operacao('divisao')">/</button>
+            </div>
+        </div>
+    
+        <!-- Parágrafo que exibe a resposta -->
+        <p id="resposta"></p>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

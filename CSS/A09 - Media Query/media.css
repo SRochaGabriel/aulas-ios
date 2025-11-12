@@ -1,0 +1,26 @@
+/* Definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições para o container */
+.container {
+    background-color: rgb(150, 255, 255);
+}
+
+/* Utilizando media query para definir regras de CSS diferentes em telas menores */
+@media(max-width: 768px) {
+    .container {
+        /* Aqui fica definido que, em telas com 768px de width ou menores, a cor de fundo do container é avermelhada */
+        background-color: rgb(226, 115, 115);
+    }
+}
+
+@media(max-width: 300px) {
+    .container {
+        /* Aqui fica definido que, em telas com 300px de width ou menores, a cor de fundo do container é esverdeada */
+        background-color: rgb(154, 255, 154);
+    }
+}

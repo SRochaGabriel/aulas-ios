@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa, #caixa2 {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+#caixa2 {
+    background-color: rgb(230, 201, 158);
+}
+
+input, select {
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 10px;
+}

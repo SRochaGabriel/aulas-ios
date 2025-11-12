@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A01 - Introdução CSS</title>
+    <!-- Utilizando a tag LINK para referenciar o arquivo externo .css na página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="background-color: rgb(127, 208, 255);">O que é CSS?</h1>
+        <p>
+            CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo utilizada para descrever a apresentação de documentos escritos em HTML ou XML. Ela define a aparência visual de uma página web, controlando elementos como cores, fontes, espaçamento, layout e design.
+        </p>
+    </header>
+
+    <main>
+        <h2>Existem 3 formas de aplicar CSS</h2>
+        <!-- Utilizando o atributo STYLE dentro da tag P para definir um estilo inline -->
+        <p style="color: green;">
+            Inline = é definido na mesma linha, através de um atributo.
+            <img src="./imagens/logo.png" alt="Logotipo" width="50">
+        </p>
+
+        <p id="texto_centralizado">
+            Interno = é definido dentro do documento HTML, com a tag STYLE que é colocada no HEAD da página.
+        </p>
+        
+        <p class="grupo">
+            Externo = é definido dentro de um arquivo .css e utilizando seletores.
+        </p>
+
+        <!-- 
+            ID = Identificador único de um elemento
+            CLASS = Identificador de grupo para elementos
+        -->
+
+        <p class="grupo">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis autem rerum tempora aliquam vero illum accusantium ipsa veniam esse omnis, magni quod iure sequi voluptatibus excepturi incidunt architecto debitis facilis.
+        </p>
+        
+        <p class="grupo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vitae debitis velit mollitia similique aspernatur rerum, maiores reiciendis nihil perspiciatis. Dicta nam sit fugit aliquid perspiciatis sunt repellat autem nobis.
+        </p>
+    </main>
+</body>
+</html>

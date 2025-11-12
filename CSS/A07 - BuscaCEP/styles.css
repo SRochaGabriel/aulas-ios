@@ -1,0 +1,70 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Definições gerais para a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* Definições para o body */
+body{
+    background-color: #eee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Definições para o container principal */
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    width: 500px;
+    text-align: center;
+}
+
+/* Definições para o título principal */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Definições para o formulário */
+#form_cep {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Definições para o input com atributo text */
+input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+/* Definições para o botão */
+button {
+    border-radius: 5px;
+    padding: 10px;
+    border: 0;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Span de destaque */
+.destaque {
+    font-weight: 600;
+}
+
+/* Definição para o parágrafo da div resultado */
+.resultado p {
+    text-align: left;
+}
